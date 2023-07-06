@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>My page</title>
+    <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h2> 🦍猩猩 </h2>
+    <h2 id="pop"> {{count}} </h2>
+    <img src="{{ url_for('static', filename='images/gorilla_banana.png') }}" alt="My test image" />
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+</body>
+
+</html>
